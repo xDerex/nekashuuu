@@ -30,7 +30,7 @@ apiai_token = os.environ['api_ai']
 bot_token = os.environ['BOT_TOKEN']
 An = Pymoe.Anilist()
 
-bot = commands.Bot(command_prefix='n!')  # SETUP BOT COMMAND PREFIX
+bot = commands.Bot(command_prefix='!')  # SETUP BOT COMMAND PREFIX
 
 
 @bot.event
@@ -711,4 +711,4 @@ async def urban(ctx):
     await bot.say("Word: {}\nVotes: {}\nDefinitioin: {}\nExample: {}".format(rq_json['list'][0]['word'], rq_json['list'][0]['thumbs_up'], rq_json['list'][0]['definition'], rq_json['list'][0]['example']))
 
 
-bot.run("NTEyNjExNTc4NDA3ODEzMTMx.Ds7_Dw.P5KQWL6m1oaJbNEr6SSZekgGt78")
+bot.run(token)
